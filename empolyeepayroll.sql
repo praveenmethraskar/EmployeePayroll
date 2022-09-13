@@ -55,6 +55,24 @@ alter table employee_payroll add department varchar(100) not null default 'IT'
 
 alter table employee_payroll add basicpay bigint, deductions bigint,taxable_pay bigint, income_tax bigint, net_pay bigint 
 
+--UC10
+
+
+update employee_payroll set
+phonenumber=9985465230,
+address1='Hyderabad',
+department='Mechanical',
+basicpay=20000,
+deductions=2000,
+taxable_pay=1000,
+income_tax=200,
+net_pay=18000 where name='Pramod'
+
+
+select name from employee_payroll order by name desc
+
+select * from employee_payroll
+
 
 
 
